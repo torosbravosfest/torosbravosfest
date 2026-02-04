@@ -1,0 +1,213 @@
+
+:root {
+  --color-principal: black;
+  --color-secundario: white;
+}
+/* Para títulos del formulario */
+.formulario h2 {
+  font-family: 'Caveat'; /* igual que subtítulo del index */
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+/* Para etiquetas y texto dentro del formulario */
+.campo label {
+  font-family: 'Caveat';
+  font-size: 30px;
+  color: rgb(199, 123, 9);
+}
+
+.campo input, .campo textarea, .campo select {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+}
+
+/*formulario.html*/
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px;
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+}
+
+.formulario, .info-contacto {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.formulario h2, .info-contacto h2 {
+  font-family: 'Bungee Shade', cursive;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.campo {
+  margin-bottom: 10px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.campo input, .campo textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #773c05;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo input:focus, .campo textarea:focus {
+  border-color: #ff4b5c;
+  box-shadow: 0 0 8px rgba(47, 151, 26, 0.3);
+  outline: none;
+}
+
+.btn-enviar {
+  background: linear-gradient(135deg, #751c01, #ec6d04);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-enviar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255,75,92,0.4);
+}
+
+.info-contacto p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.link-mas {
+  color: #08a3e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-mas:hover {
+  text-decoration: underline;
+}
+
+
+
+/*index.html*/
+header{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin-top: 0px; 
+    
+
+    
+}
+
+/* Adquiere tus boletos*/
+.header a{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    font-size: 10px;
+}
+.header ul{
+    list-style-type: none;
+    margin:0;
+    padding: 12px 0px;
+    overflow:  hidden;
+    background-color: black;
+}
+footer {
+    text-align: center;
+
+    padding: 70px;
+    font-family: 'Caveat', cursive;
+    color: black;
+    margin-top: 0px;
+}
+
+.navegacion{
+    margin-right: 20px;
+}
+
+.boton-comprar{
+    background-color: black;
+    border-bottom: 2px solid white;
+    border-radius: 1rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* body index*/
+body {
+
+    
+    background-image: url(/public/src/fondo.png);
+    background-size: cover;
+}
+h1{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 100%;
+    text-align: center;
+    color: black;
+}
+
+.imagen-portada{
+    width: 100%;
+    height: auto;
+}
+
+form{
+    font-family: 'arial', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top: 0px; 
+
+}
+form input[type="text"], form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
